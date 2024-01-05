@@ -138,6 +138,7 @@ export default function CombinedAppBarWithDrawer() {
   });
 
   return (
+    <div className='box1'>
     <ThemeProvider theme={theme}>
       <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Box sx={{ flexGrow: 1 }}>
@@ -191,7 +192,9 @@ export default function CombinedAppBarWithDrawer() {
             Discover Elegance Rediscover History
             </h1>
             <p>Step into a world of timeless elegance at AdVintage, where each piece tells a story of the past and adds a touch of vintage charm to your present.</p>
-            <button type="button"><a href="#">Explore!!</a></button>
+            <Link to="/shop">
+            <button type="button"><a href="/shop">Learn More!!</a></button>
+            </Link>
         </div>
       </Box>
 
@@ -261,5 +264,6 @@ export default function CombinedAppBarWithDrawer() {
       </Container>
     </Box>
     </ThemeProvider>
+    </div>
   );
 }

@@ -1,7 +1,9 @@
-body{
+.box1{
     width: 100vw;
     min-height: 100vh;
     background:url('D:\sb-3\digi-marketing\digi\src\assets\home1.jpg') no-repeat;
+    background: cover;
+    background-color: #fff;
     margin: 0;
     padding: 0;
 }
